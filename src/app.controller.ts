@@ -11,8 +11,7 @@ export class AppController {
     
   } 
 
-
-  @Get('adatMegadas?')
+  @Get('adatMegadas')
   @Render('adatmegadas')
   adatMegadasa() {
     return {
@@ -21,9 +20,9 @@ export class AppController {
     }
   }
 
-  @Post('adatMegadass')
+  @Post('adatMegadas')
   adatMegadas() {
-    
+    if()
   }
 
 }
