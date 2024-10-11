@@ -32,6 +32,12 @@
         Biztonsági kód: <br>
         <input type="number" name="kod" placeholder="000"><br>
 
+        <% for(let e of errors){ %>
+            response.render('adatmegadas', {
+                errors
+            })
+        }
+
         <input type="submit" value="submit">
     </form>
 </body>

@@ -1,6 +1,6 @@
-export class newOrderDto{
+export class NewOrderDto{
     name: string;
-    
+
     szaml_orszag: string;
     iranyitoSzam: string;
     varos: string;
