@@ -1,4 +1,4 @@
-import { Controller, Get, Render } from '@nestjs/common';
+import { Controller, Get, Post, Render } from '@nestjs/common';
 import { AppService } from './app.service';
 
 @Controller()
@@ -6,10 +6,24 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  @Render('index')
-  getHello() {
+  @Render('selectedItem')
+  selectedItem() {
+    
+  } 
+
+
+  @Get('adatMegadas?')
+  @Render('adatmegadas')
+  adatMegadasa() {
     return {
-      message: this.appService.getHello()
-    };
+      errors: [],
+      data: {}
+    }
   }
+
+  @Post('adatMegadass')
+  adatMegadas() {
+    
+  }
+
 }
